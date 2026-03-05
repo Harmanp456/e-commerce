@@ -13,6 +13,10 @@ const app = express();
 // middleware
 app.use(express.json());
 
+// serve static frontend assets from the public folder
+app.use(express.static('public'));
+// end static assets
+
 // mount routers
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
