@@ -10,12 +10,8 @@ async function loadCategories() {
     }
 
     el.innerHTML = data.map(cat => {
-      const img = cat.image || `https://picsum.photos/seed/${cat._id}/400/240`;
       return `
       <a href="/category.html?id=${cat._id}" class="block bg-white rounded shadow hover:shadow-md overflow-hidden">
-        <div class="card-image">
-          <img src="${img}" alt="${escapeHtml(cat.name)}" loading="lazy" />
-        </div>
         <div class="p-4">
           <h3 class="font-medium">${escapeHtml(cat.name)}</h3>
           <p class="text-sm text-gray-600 mt-1">${escapeHtml(cat.description || '')}</p>

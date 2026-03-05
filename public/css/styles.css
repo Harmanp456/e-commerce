@@ -1,19 +1,4 @@
-/* Custom styles for cards and images */
-.card-image {
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%; /* 5:3 ratio */
-  position: relative;
-  background: #f3f4f6;
-}
-.card-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* Shared UI styles */
 
 /* Slightly larger container spacing */
 body .max-w-4xl { max-width: 1100px; }
